@@ -1,0 +1,358 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* MENU */
+header {
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    gap: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 130px;
+    padding-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 20px;
+
+}
+
+.menu a {
+    display: flex;
+    color: antiquewhite;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+.menu_item.active a,
+.menu_item a:hover {
+    text-decoration-line: underline;
+
+}
+
+
+/* MAIN */
+
+.imagenprincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85vh;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.imagenprincipal img {
+    width: 200px;
+}
+
+.imagenprincipal h2 {
+    display: flex;
+    color: white;
+    background-color: #77603da2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    padding-inline: 15px;
+}
+
+.imagenprincipal p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    padding-inline: 300px;
+}
+
+
+/* IMAGENES del slider POR SECCION */
+
+.imghome {
+    background-image: url("../images/granos\ cafe.jpg");
+}
+
+.imgnosotros {
+    background-image: url("../images/barista.jpg");
+}
+
+.imgorigenes {
+    background-image: url(../images/maquina\ cafe\ historia.jpg);
+}
+
+/* NOSOTROS */
+
+.imagensecundaria {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.titulosecundario {
+    padding: 50px;
+    background-color: beige;
+    color: rgb(50, 56, 56);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+}
+
+.imagensecundaria p {
+    padding: 15px;
+    background-color: beige;
+    color: rgb(50, 56, 56);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* ORIGENES */
+
+.videoyoutube {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(50, 56, 56);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.videoyoutube p {
+    background-color: beige;
+    padding-top: 15px;
+}
+
+/* CONTACTO */
+.contacto_titulo {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    color: white;
+    background-color: #77603da2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.formulario {
+    display: flex;
+    color: rgb(71, 65, 65);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.mapa {
+    padding-left: 20px;
+}
+
+/* CAFE */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "tipocafe_1 tipocafe_2"
+        "tipocafe_3 tipocafe_4";
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.container>div {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(114, 105, 79);
+}
+
+.tipocafe_1 {
+    grid-area: tipocafe_1;
+    background-image: url(../images/tipo\ cafe\ 1.webp);
+    background-position: top;
+
+}
+
+.tipocafe_2 {
+    grid-area: tipocafe_2;
+    background-image: url(../images/tipo\ cafe\ 2.webp);
+    background-position: top;
+
+
+}
+
+.tipocafe_3 {
+    grid-area: tipocafe_3;
+    background-image: url(../images/tipo\ cafe\ 3.webp);
+    background-position: top;
+}
+
+.tipocafe_4 {
+    grid-area: tipocafe_4;
+    background-image: url(../images/tipo\ cafe\ 4.webp);
+    background-position: top;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(24, 23, 23);
+    gap: 20px;
+
+}
+
+.wpp {
+    display: flex;
+    width: 25px;
+}
+
+.insta {
+    display: flex;
+    flex-direction: row;
+    width: 25px;
+}
+
+
+/* MEDIA QUERIES */
+/* Celular screen */
+
+@media screen and (max-width: 480px) {
+
+    /* Generales */
+    .logo {
+        width: 60px;
+        padding-left: 10px;
+
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .imagenprincipal h2 {
+        font-size: 15px;
+    }
+
+    .imagenprincipal p {
+        font-size: 10px;
+        padding-inline: 30px;
+    }
+
+
+    /* Café */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .container>div {
+        height: 100%;
+        background-position: center;
+        font-size: 14px;
+
+    }
+
+    /* Contact */
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .mapa {
+        display: flex;
+        width: 80%;
+        height: 80%;
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    /* Nosotros */
+    .titulosecundario {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .imagensecundaria {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+
+    .imagensecundaria p {
+        font-size: 14px;
+
+    }
+
+    /* Origenes */
+    .videoyoutube {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 300px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .wpp {
+        width: 15px;
+    }
+
+    .insta {
+        width: 15px;
+    }
+
+}

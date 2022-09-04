@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body>
+    <!-- Menu -->
+    <header>
+        <img src="../images/logo aroma h.png" alt="logo" class="logo">
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu_item ">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./origenes.html">Orígenes</a>
+                </li>
+                <li class="menu_item">
+                    <a href="./cafe.html">Café</a>
+                </li>
+                <li class="menu_item active">
+                    <a href="./contact.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section>
+            <h1 class="contacto_titulo">Contact us</h1>
+        </section>
+
+        <!-- Formulario -->
+        <section class="formulario">
+            <form class="form_labels">
+                <label for="name">
+                    Name
+                    <input type="text" id="name" required>
+                </label>
+
+                <br />
+                <br />
+
+                <label for="email">
+                    Email
+                    <input type="email" name="email" id="email" required>
+                </label>
+
+                <br />
+                <br />
+
+                <label for="mensaje">
+                    Your message
+                    <textarea name="" id="mensaje" cols="30" rows="10" required></textarea>
+                </label>
+
+                <br />
+                <br />
+
+                <label for="">
+                    <select name="country" required>
+                        <option value="" disabled selected>Where are you from</option>
+                        <option value="1"> Argentina </option>
+                        <option value="2"> Chile </option>
+                        <option value="3"> México </option>
+                        <option value="4"> Uruguay</option>
+                        <option value="5"> United States </option>
+                    </select>
+                </label>
+
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13618.151645667378!2d-64.19334472422656!3d-31.42685509234468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28fb8f9010b%3A0xf38e0d8c5a49ab83!2zTnVldmEgQ8OzcmRvYmEsIEPDs3Jkb2Jh!5e0!3m2!1ses-419!2sar!4v1659999576502!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="mapa">
+            </iframe>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+            <a href="https://wa.me/5493517343888" target="_blank">
+                <img src="../images/whatsapp.png" alt="whatsapp" class="wpp" />
+            </a>
+            <a href="https://www.instagram.com/agustinasworld/?hl=es-la" target="_blank">
+                <img src="../images/instagram.png" alt="instagram" class="insta" />
+            </a>
+    </footer>
+
+
+</body>
+
+</html>
