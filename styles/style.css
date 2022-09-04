@@ -51,11 +51,9 @@ header {
 
 }
 
-
-.menu_item.active a,
+.menu_item.active,
 .menu_item a:hover {
-    text-decoration-line: underline;
-
+    background-color: rgb(63, 58, 50);
 }
 
 
@@ -96,6 +94,44 @@ header {
     padding-inline: 300px;
 }
 
+.tarjetitas,
+.tarjetas {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+
+
+}
+
+.tarjetita,
+.tarjeta {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(87, 72, 54);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tarjetita,
+.wpp .insta {
+    transition: all .3s;
+}
+
+.wpp:hover {
+    transform: scale(1.1);
+}
+
+.insta:hover {
+    transform: scale(1.1);
+}
+
+
+.tarjetita:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 
 /* IMAGENES del slider POR SECCION */
 
@@ -287,6 +323,10 @@ footer {
         padding-inline: 30px;
     }
 
+    /* Index Tarjetas */
+    .tarjetitas {
+        flex-direction: column;
+    }
 
     /* Café */
 
